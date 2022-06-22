@@ -1,0 +1,25 @@
+.row{
+  display: flex;
+  justify-content: space-between;
+  padding: 10rpx 20rpx;
+  align-items: center;
+  height: 120rpx;
+  border-bottom: 1px solid #cccccc;
+}
+
+view.row:last-child{
+  border-bottom: none;
+}
+
+image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+button{
+  background-color: #F26711;
+  color: white;
+  margin: 40rpx;
+  border-radius: 25rpx;
+}

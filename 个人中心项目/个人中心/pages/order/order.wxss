@@ -1,0 +1,25 @@
+.container{
+  text-align: center;
+}
+
+.company{
+  margin: 50rpx 40rpx;
+  display: flex;
+  text-align: left;
+  align-items: center;
+}
+
+.company .title{
+  width: 25%;
+  font-size: small;
+}
+.company .input{
+  width: 70%;
+  padding: 10rpx;
+  border: 1px solid #cccccc;
+  height: 40rpx;
+}
+
+scroll-view{
+  font-size: small;
+}

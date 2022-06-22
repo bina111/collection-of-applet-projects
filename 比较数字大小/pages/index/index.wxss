@@ -1,0 +1,21 @@
+view{
+  margin: 50rpx;
+}
+
+button{
+  background-color: #7fffd4;
+  color: white;
+  margin: 50rpx;
+}
+
+text{
+  font-size: 30rpx;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px green;
+}
+
+input{
+  border-bottom: 1px solid black;
+  width: 600rpx;
+  margin-top: 20rpx;
+}

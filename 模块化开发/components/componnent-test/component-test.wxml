@@ -1,0 +1,5 @@
+<view class="red" bindtap="onTap">
+  {{hello}} {{value}}
+</view>
+<slot>
+</slot>

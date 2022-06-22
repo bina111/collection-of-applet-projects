@@ -1,0 +1,35 @@
+image{
+  width: 100vw;
+  height: 100vh;
+}
+
+.content{
+  position: fixed;
+  width: 80vw;
+  left: 10vw;
+  bottom: 6vh;
+}
+
+.content view{
+  font-size: 2.8vh;
+  color: #ff4c91;
+  border: 1px solid #ff4c91;
+  border-radius: 10rpx;
+  padding: 1.5vh 40rpx;
+  margin-bottom: 1.5vh;
+}
+
+.content button{
+  background-color: #ff4c91;
+  color: white;
+  font-size: 3vh;
+  border-radius: 30rpx;
+}
+
+.content picker{
+  padding: 0.7vh 0;
+}
+
+.pgcolor{
+  color: #ff4c91;
+}

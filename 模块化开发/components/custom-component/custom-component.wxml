@@ -1,0 +1,6 @@
+<view class="list" wx:for="{{list}}" wx:key="*this">
+  <text>我是第{{item}}项</text>
+</view>
+<button bindtap="addItem">add</button>
+<button bindtap="delItem">del</button>
+<slot></slot>

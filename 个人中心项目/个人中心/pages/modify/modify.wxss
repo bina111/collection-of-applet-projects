@@ -1,0 +1,21 @@
+view{
+  padding: 40rpx;
+  border-bottom: 1px solid #cccccc;
+  display: flex;
+  align-items: center;
+}
+
+text{
+  margin-right: 30rpx;
+}
+
+radio{
+  margin-right: 20rpx;
+}
+
+button{
+  margin-top: 40rpx;
+  background-color: #F26711;
+  color: white;
+  border-radius: 25rpx;
+}

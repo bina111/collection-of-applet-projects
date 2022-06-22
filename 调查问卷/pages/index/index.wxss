@@ -1,0 +1,35 @@
+.container{
+  margin: 50rpx;
+}
+
+view{
+  margin-bottom: 30rpx;
+}
+
+label{
+  display: block;
+  margin-bottom: 20rpx;
+}
+
+input{
+  border-bottom: 1px solid black;
+  width: 600rpx;
+}
+
+text{
+  display: block;
+  margin-bottom: 10rpx;
+}
+
+textarea{
+  width: 600rpx;
+  height: 100rpx;
+  margin-top: 20rpx;
+  border: 2px solid #cccccc;
+  border-radius: 15rpx;
+}
+
+button{
+  background-color: blue;
+  color: white;
+}

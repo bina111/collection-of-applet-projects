@@ -1,0 +1,26 @@
+<!-- <picker range="{{array}}" value="{{index}}" bindchange="pickerChange">
+  <view>当前选择：{{array[index]}}</view>
+</picker> -->
+
+<image src="/images/bj_2.png"></image>
+<form bindsubmit="formSubmit">
+  <view class="content">
+    <view>
+      <input name="name" placeholder-class="pgcolor" placeholder="请输入您的姓名：" bindblur="getName"/>
+    </view>
+    <view>
+      <input name="phone" placeholder="请输入您的手机号码：" placeholder-class="pgcolor" bindblur="getPhone"/>
+    </view>
+    <view>
+      <picker name="num" bindchange="pickerChange" value="{{picker.index}}" range="{{picker.arr}}">
+        参加婚礼人数：{{picker.arr[picker.index]}}
+      </picker>
+    </view>
+    <view>
+      <input name="wish" placeholder-class="pgcolor" placeholder="请输入您的祝福语："/>
+    </view>
+    <!-- 微信小程序的button的宽度想要实现得在这里设置style -->
+    <!-- 模版消息已下线，现在开始用订阅消息 -->
+    <button form-type="submit" style="width: 100%;" report-submit >提交</button>
+  </view>
+</form>

@@ -1,0 +1,151 @@
+.player{
+  position: fixed;
+  top: 20rpx;
+  right: 20rpx;
+  z-index: 1;
+}
+
+.player > image:first-child{
+  width: 80rpx;
+  height: 80rpx;
+  animation: musicRotate 3s linear infinite;
+}
+
+@keyframes musicRotate{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.player > image:last-child{
+  width: 28rpx;
+  height: 80rpx;
+  margin-left: -5px;
+}
+
+/* 设置播放和暂停的动画 */
+.player-play > image:first-child{
+  animation-play-state: running;
+}
+
+.player-play>image:last-child{
+  animation: musicStart 0.2s linear forwards;
+}
+
+.player-pause>image:first-child{
+  animation-play-state: paused;
+}
+
+.player-pause>image:last-child{
+  animation: musicStop 0.2s linear forwards;
+}
+
+@keyframes musicStart{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(20deg);
+  }
+}
+
+@keyframes musicStop{
+  from{
+    transform: rotate(20deg);
+  }
+  to{
+    transform: rotate(0deg);
+  }
+}
+
+/* 背景图片样式 */
+.bg{
+  width: 100vw;
+  height: 100vh;
+}
+
+/* 内容样式 */
+.content{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-gif{
+  width: 19vw;
+  height: 18.6vh;
+  margin-bottom: 1.5vh;
+}
+
+.content-title{
+  font-size: 5vh;
+  text-align: center;
+  color: #ff4c91;
+  margin-bottom: 2.5vh;
+}
+
+.content-avator image{
+  width: 24vh;
+  height: 24vh;
+  border-radius: 50%;
+  border: 3px solid #ff4c91;
+}
+
+.content-info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 4vh;
+  width: 48vw;
+}
+
+.content-name{
+  color: #ff4c91;
+  font-size: 2.7vh;
+  line-height: 4.5vh;
+  font-weight: bold;
+  position: relative;
+}
+
+.content-name>image{
+  width: 2.6vh;
+  height: 2.6vh;
+  position: absolute;
+  border: 1px solid #ff4c91;
+  border-radius: 50%;
+  top: -1vh;
+  right: -3.6vh;
+}
+
+.content-wedding{
+  flex:1
+}
+
+.content-wedding>image{
+  width: 5.5vh;
+  height: 5.5vh;
+  margin-left: 4vh;
+}
+
+.content-address{
+  margin-top: 4vh;
+  color: #ff4c91;
+  font-size: 3vh;
+  line-height: 4.5vh;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+
+
+
+
+

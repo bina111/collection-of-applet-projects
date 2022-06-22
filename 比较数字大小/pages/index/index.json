@@ -1,0 +1,6 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText":"数值比较",
+  "navigationBarBackgroundColor":"#7fffd4",
+  "enablePullDownRefresh":true
+}

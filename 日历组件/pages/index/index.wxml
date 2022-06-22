@@ -1,0 +1,21 @@
+<view class="calendar">
+  <view class="date-show">
+    <view class="lt-arrow">
+      <image src="/icon/left.png" bindtap="lastMonth" mode="widthFix"></image>
+    </view>
+    {{year}}年{{month}}月
+    <view class="rt-arrow">
+      <image src="/icon/right.png" bindtap="nextMonth" mode="widthFix"></image>
+    </view>
+  </view>
+  <view class='date-header'>
+    <view wx:for='{{date}}' wx:key="this">{{item}}</view>
+  </view>
+  <view class="date-box">
+    <view wx:for='{{dateArr}}' class='{{isToday == item.isToday ? "nowDay" : ""}}' data-date='{{item.isToday}}' wx:key="this">
+      <view class='date-head'>
+          <view>{{item.dateNum}}</view>
+      </view>
+    </view>
+  </view>
+</view>

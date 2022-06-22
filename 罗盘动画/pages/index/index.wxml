@@ -1,0 +1,15 @@
+<view class="anmi-pic">
+  <image src="/images/img.png" animation="{{animation}}" catchtouchstart="start" catchtouchend="end"></image>
+</view>
+
+<view class="anmi-btns">
+  <button style="width: 22%;" bindtap="rotate">旋转</button>
+  <button style="width: 22%;" bindtap="scale">缩放</button>
+  <button style="width: 22%;" bindtap="translate">移动</button>
+  <button style="width: 22%;" bindtap="skew">倾斜</button>
+  <button style="width: 350rpx;" bindtap="rotateAndScale" class="btn-two">旋转并缩放</button>
+  <button style="width:350rpx;" bindtap="rotateThenScale" class="btn-two">旋转后缩放</button>
+  <button style="width: 350rpx;" bindtap="all" class="btn-two">同时展示全部</button>
+  <button style="width: 350rpx;" bindtap="allOrder" class="btn-two">按顺序展示全部</button>
+  <button style="width: 610rpx;" bindtap="reset" class="btn-reset">回到原始状态</button>
+</view>

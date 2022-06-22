@@ -1,0 +1,12 @@
+<view>
+    <text>请输入第一个数字：</text>
+    <input type="number" bindblur="num1change"/>
+</view>
+<view>
+    <text>请输入第一个数字：</text>
+    <input type="number" bindblur="num2change"/>
+</view>
+<button bindtap="compare" data-index="12" id="asdad">比较</button>
+<view>
+    <text >比较结果：{{result}}</text>
+</view>

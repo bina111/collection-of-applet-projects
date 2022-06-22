@@ -1,0 +1,38 @@
+.page-section>view{
+  display: flex;
+  margin: 40rpx 20rpx;
+  border-bottom: 1px solid #cccccc;
+  padding: 10rpx;
+  align-items: center;
+}
+
+.page-section>view>view:first-child{
+  width: 25vw;
+}
+
+.page-section>view>view:last-child{
+  width: 75vw;
+}
+
+.add{
+  display: flex;
+  position: fixed;
+  bottom: 10rpx;
+  padding: 20rpx;
+  width: 100%;
+  border-top: 1px solid #cccccc;
+  align-items: center;
+}
+
+.left{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 20rpx;
+}
+
+.right{
+  width: 25rpx;
+  height: 25rpx;
+  position: absolute;
+  right: 80rpx;
+}

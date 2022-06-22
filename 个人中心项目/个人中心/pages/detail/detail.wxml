@@ -1,0 +1,17 @@
+<!-- 绑定changeAvatar()函数更改头像 -->
+<view class="row">
+  <view>头像</view>
+  <view>
+    <image src="{{imageUrl}}" mode="aspectFill" bindtap="changeAvatar"></image>
+    <view class="arrow"></view>
+  </view>
+</view>
+<view class="row">
+  <view>昵称</view>
+  <view>{{username}}</view>
+</view>
+<view class="row">
+  <view>性别</view>
+  <view>{{gender}}</view>
+</view>
+<button bindtap="jumpModify" style="width: 90%;">修改资料</button>

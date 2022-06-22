@@ -1,0 +1,35 @@
+/**index.wxss**/
+.red
+{
+  color: blue;
+}
+
+.model{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+}
+
+.model>view{
+  display: flex;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  translate: -50% 0;
+  border: 1px solid red;
+  color: blue;
+  padding: 20px;
+}
+
+.open{
+  position: absolute;
+  bottom: 40px;
+  font-size: 80rpx;
+  color: green;
+  left: 50%;
+  translate: -50% 0;
+  
+}

@@ -1,0 +1,13 @@
+<view class="btns-row first">
+  <button bindtap="play" size="mini">播放文章</button>
+  <button bindtap="pause" size="mini">暂停</button>
+</view>
+<view class="text">
+  前文讲述了许多Web请求过程中的预处理过程，对于不同的业务，我们还是期望有不同的处理方式，这带来了路由的选择问题。本节将会介绍文件路径、MVC、RESTful等路由方式。
+</view>
+<view class="btns-row">
+  <button bindtap="record" size="mini" class="btn">录音</button>
+  <button bindtap="stop"  size="mini" class="btn">停止</button>
+  <button bindtap="playback" size="mini" class="btn">回放</button>
+  <button bindtap="upload" size="mini" class="btn">上传</button>
+</view>

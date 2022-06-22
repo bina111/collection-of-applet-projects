@@ -1,0 +1,35 @@
+<view class="wrap">
+  <scroll-view scroll-y="true" class="chat" scroll-top="{{scrollTop}}"  id="tab-con">
+    <view class="list">
+      <view class="chat-news" wx:for="{{newslist}}" wx:key="id">
+        <!-- 根据角色进行判断 -->
+        <block wx:if="{{item.role=='me'}}">
+          <!-- role是我的话消息放在右侧 -->
+          <view class="news-lf">
+            <text class="new-text me">{{item.content}}</text>
+            <image class="new-img" src="/images/me.jpg"></image>
+          </view>
+        </block>
+        <block wx:else>
+          <!-- role是服务器的话消息放在左边 -->
+          <view class="new-rt">
+            <image src="/images/avatar.png" class="new-img"></image>
+            <text class="new-text server">{{item.content}}</text>
+          </view>
+        </block>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+
+<!-- 聊天输入 -->
+<view class="message">
+  <form>
+    <!-- 微信小程序处理软键盘弹出布局上移遮住输入框的解决方法 （设置cursor-spacing="20"）-->
+    <input type="text" cursor-spacing="20" placeholder="请输入聊天内容..." bindinput="bindChange"></input>
+    <button size="mini" type="primary" bindtap="send" formType="reset" 	hover-class="button-hover">发送</button>
+  </form>
+</view>
+
+<!-- 练手画圆 -->
+<!-- <canvas id="cas" type="2d" class="cas"></canvas> -->

@@ -1,0 +1,14 @@
+<form bindsubmit="formSubmit">
+  <view>
+    <text>昵称：</text>
+    <input type="text" name="name" value="{{username}}"/>
+  </view>
+  <view>
+    <text>性别：</text>
+    <radio-group name="gender">
+      <label><radio value="0" checked="{{gender==='男'}}">男</radio></label>
+      <label><radio value="1" checked="{{gender==='女'}}">女</radio></label>
+    </radio-group>
+  </view>
+  <button form-type="submit" style="width: 90%;">保存</button>
+</form>

@@ -1,0 +1,19 @@
+/**index.wxss**/
+.btns-row{
+  display: flex;
+  justify-content: space-around;
+  margin: 30rpx;
+}
+
+.btns-row button{
+  width: 20%;
+}
+
+.btns-row.first button{
+  width: 40%;
+}
+
+.text{
+  font-size: 32rpx;
+  margin: 30rpx;
+}

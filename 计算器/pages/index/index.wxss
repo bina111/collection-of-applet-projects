@@ -1,0 +1,66 @@
+/**index.wxss**/
+page{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.result{
+  flex:1;
+  background-color: rgb(201, 198, 198);
+  position: relative;
+}
+
+.btns{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  font-size: 17pt;
+  border-top: 1rpx solid #cccccc;
+  border-left: 1rpx solid #cccccc;
+}
+
+.btns>view{
+  flex: 1;
+  display: flex;
+}
+
+.bg{
+  background-color: #eeeeee;
+}
+
+.btns>view>view{
+  flex-basis: 25%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1rpx solid #cccccc;
+  border-bottom: 1rpx solid #cccccc;
+}
+
+.btns>view:last-child>view:first-child{
+  flex-basis: 50%;
+}
+
+.btns>view:first-child>view:first-child{
+  color: #ff0000;
+}
+
+.btns>view>view:last-child{
+  color: #fc8100;
+}
+
+.result_num{
+  position: absolute;
+  bottom: 3vh;
+  font-size: 27pt;
+  right: 3vw;
+}
+
+.result_op{
+  position: absolute;
+  bottom: 1vh;
+  font-size: 15pt;
+  right: 3vw;
+}

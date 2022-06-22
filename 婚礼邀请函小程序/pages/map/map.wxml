@@ -1,0 +1,5 @@
+<!-- <map name="" latitude="23.139355" longitude="113.352126" scale="18"></map>
+
+<button bindtap="buttonTap">获取地理位置</button> -->
+
+<map latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}" bindmarkertap="markerTap"></map>

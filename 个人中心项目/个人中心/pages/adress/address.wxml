@@ -1,0 +1,35 @@
+<view>
+  <form>
+    <view class="page-section">
+      <view>
+        <view>收货人姓名</view>
+        <view>{{addressInfo.userName}}</view>
+      </view>
+      <view>
+        <view>邮编</view>
+        <view>{{ addressInfo.postalCode }}</view>
+      </view>
+      <view>
+        <view>地区</view>
+        <view>{{ addressInfo.provinceName }} {{ addressInfo.cityName}} {{ addressInfo.countyName }}</view>
+      </view>
+      <view>
+        <view>收货地址</view>
+        <view>{{ addressInfo.detailInfo }}</view>
+      </view>
+      <view>
+        <view>国家码</view>
+        <view>{{ addressInfo.nationalCode }}</view>
+      </view>
+      <view>
+        <view>手机号码</view>
+        <view>{{ addressInfo.telNumber }}</view>
+      </view>
+    </view>
+  </form>
+</view>
+<view class="add" bindtap="chooseAddress">
+  <image src="/images/6.png" mode="widthFix" class="left"></image>
+  <view class="text">获取收货地址</view>
+  <image class="right" src="/images/arrow.png" mode="widthFix"></image>
+</view>

@@ -1,0 +1,37 @@
+<!--index.wxml-->
+<view>
+  {{message}}
+  
+</view>
+<import src="../index/template/temp.wxml"></import>
+<template is="msgItem" data="{{...item}}"></template>
+<view wx:for="{{[1,2,3,4,5]}}">
+  <template is="{{item%2?'odd':'even'}}"></template>
+</view>
+
+<my-component value="{{testContent}}">
+  <view>示例内容</view>
+</my-component>
+
+<input type="text" placeholder="输入" bindinput="getValue"/>
+<button bindtap="click">换值</button>
+
+<custom-component></custom-component>
+<input type="text" placeholder="hahah"/>
+
+<!-- <button bindtap="getUserInfo">获取用户信息</button>
+<view class="info">
+  <image src="{{userInfo.avatarUrl}}" mode="widthFix"></image>
+  <view class="infonick">{{userInfo.nickName}}</view>
+</view> -->
+
+<view class="model" hidden="{{isClick}}" bindtap="click">
+  <view>
+    <view>开</view>
+    <view>关</view>
+  </view>
+
+</view>
+
+<view class="open" bindtap="click">+</view>
+<button bindtap="dianwo">点我</button>

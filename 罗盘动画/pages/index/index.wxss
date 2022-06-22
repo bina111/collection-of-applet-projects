@@ -1,0 +1,25 @@
+.anmi-pic{
+  text-align: center;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 100rpx;
+}
+
+.anmi-pic image{
+  width: 400rpx;
+  height: 400rpx;
+}
+
+.anmi-btns{
+  margin-top: 20rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+button{
+  background-color: aqua;
+  color: white;
+  margin: 15rpx 0;
+}
+
