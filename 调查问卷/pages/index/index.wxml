@@ -22,7 +22,7 @@
     </view>
     <view>
       <text>您的意见：</text>
-      <textarea name="option" value="{{options}}"></textarea>
+      <textarea name="option" value="{{option}}" placeholder="请输入您的宝贵意见"></textarea>
     </view>
     <button form-type="submit">提交</button>
   </form>

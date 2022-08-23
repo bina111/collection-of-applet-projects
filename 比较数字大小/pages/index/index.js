@@ -10,11 +10,7 @@ Page({
   // 事件处理函数
   
   onLoad() {
-    console.log("哈哈哈");
-  },
-
-  onPullDownRefresh:function(){
-    console.log("下拉刷新页面！");
+    console.log("onLoad")
   },
 
   num1change:function(e){
@@ -22,7 +18,7 @@ Page({
     this.setData({
       num1:num1
     });
-    console.log(e);
+    // console.log(e);
   },
 
   //comfirm事件仅用于type为text的input使用
@@ -40,7 +36,7 @@ Page({
     this.setData({
       num2:num2
     });
-    console.log(e)
+    // console.log(e)
   },
 
   compare:function (e) { 

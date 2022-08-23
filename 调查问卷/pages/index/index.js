@@ -4,18 +4,18 @@ const app = getApp()
 
 Page({
   data: {
-     name:"张三",
-     gender:[
-       {name:'男',value:"0",checked:true},
-       {name:'女',value:"1",checked:false}
-     ],
-     skills:[
-       {name:'HTML',value:"html",checked:true},
-       {name:'CSS',value:"css",checked:true},
-       {name:'JavaScript',value:"js",checked:false},
-       {name:'PhotoShop',value:"ps",checked:false}
-     ],
-     option:"测试"
+    //  name:"",
+    //  gender:[
+    //    {name:'男',value:"0",checked:true},
+    //    {name:'女',value:"1",checked:false}
+    //  ],
+    //  skills:[
+    //    {name:'HTML',value:"html",checked:false},
+    //    {name:'CSS',value:"css",checked:false},
+    //    {name:'JavaScript',value:"js",checked:false},
+    //    {name:'PhotoShop',value:"ps",checked:false}
+    //  ],
+    //  option:""
   },
   // 事件处理函数
  
@@ -30,12 +30,36 @@ Page({
   },
 
   submit:function(e){
+    // console.log(e.detail.value)
     wx.request({
       url: 'http://127.0.0.1:3000/',
       method:'post',
       data:e.detail.value,
-      success:function(res){
+      success:res=>{
         console.log(res);
+        //清空选择的数据
+        let gender = [
+          {name:'男',value:"0",checked:true},
+          {name:'女',value:"1",checked:false}
+        ];
+        let skills = [
+          {name:'HTML',value:"html",checked:false},
+          {name:'CSS',value:"css",checked:false},
+          {name:'JavaScript',value:"js",checked:false},
+          {name:'PhotoShop',value:"ps",checked:false}
+        ];
+         this.setData({
+           name: '',
+           gender,
+           skills,
+           option:''
+         });
+         wx.showToast({
+           title: '提交成功',
+         })
+      },
+      fail:error=>{
+        console.log(error)
       }
     })
   }

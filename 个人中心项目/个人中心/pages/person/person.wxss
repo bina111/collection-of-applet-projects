@@ -1,1 +1,12 @@
 /* pages/person/person.wxss */
+view{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20rpx;
+}
+
+view > image{
+    width: 40rpx;
+    height: 40rpx;
+}

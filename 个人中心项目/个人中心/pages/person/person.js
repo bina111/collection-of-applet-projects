@@ -25,14 +25,14 @@ Page({
 
   //跳转到物流查询页面
   order:function(){
-    wx.redirectTo({
+    wx.navigateTo({
       url: '/pages/order/order',
     })
   },
 
   //跳转到收货地址页面
   address:function(){
-    wx.redirectTo({
+    wx.navigateTo({
       url: '/pages/adress/address',
     })
   },

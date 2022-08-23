@@ -34,6 +34,7 @@ Page({
    timer:null,
   onReady: function () {
 
+    //#region 
     // // 将角度转换为弧度
     // const D6 = 6 * Math.PI / 180
     // const D30 = 30 * Math.PI / 180
@@ -158,6 +159,8 @@ Page({
     //   ctx.stroke()
     //   ctx.restore()
     // }
+
+    //#endregion 
 
     //获取画布结点实例并在init函数创建画布上下文
     wx.createSelectorQuery()
@@ -325,6 +328,8 @@ Page({
 
       ctx.restore()
     }
+
+    ////#region
     // //绘制函数
     // function draw(){
     //   //设置坐标轴原点为窗口中心点
@@ -473,7 +478,7 @@ Page({
     // ctx.lineTo(150,150);
 
     // ctx.stroke();
-  
+    //#endregion
   },
 
   /**

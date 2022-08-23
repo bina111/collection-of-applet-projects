@@ -36,7 +36,13 @@ Page({
     });
 
     wx.request({
-      url: 'url?',
+      url: `http://127.0.0.1:3000/search?no=${this.data.no}&company=${this.data.company[this.data.index]}`,
+      success:res=>{
+        this.setData({
+          expressInfo:res.data
+        });
+        wx.hideLoading();
+      }
     })
   },
 

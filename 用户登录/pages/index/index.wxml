@@ -1,7 +1,0 @@
-<view wx:if="{{!hasUserInfo}}">
-  <button bindtap="getUserInfo">获取用户信息</button>
-</view>
-<view wx:else>
-  <view>{{userInfo.nickName}}</view>
-  <image src="{{userInfo.avatarUrl}}"></image>
-</view>
